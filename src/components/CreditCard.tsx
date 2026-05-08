@@ -58,7 +58,9 @@ export default function CreditCard({ project, mode = 'grid', onPlay }: CreditCar
           <>
             <div className="credit-card__poster">
               <img
-                src={`https://img.youtube.com/vi/${project.embedUrl?.split('/').pop()}/hqdefault.jpg`}
+                src={project.platform === 'vimeo' 
+                      ? `https://vumbnail.com/${project.embedUrl?.split('/').pop()}.jpg`
+                      : `https://img.youtube.com/vi/${project.embedUrl?.split('/').pop()}/hqdefault.jpg`}
                 alt={`${project.title} thumbnail`}
                 className="credit-card__poster-img"
                 loading="lazy"
