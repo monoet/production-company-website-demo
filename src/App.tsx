@@ -3,7 +3,6 @@ import './styles/components.css';
 
 import Header from './components/Header';
 import Hero from './components/Hero';
-import FeaturedReel from './components/FeaturedReel';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import About from './components/About';
@@ -18,7 +17,6 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <FeaturedReel />
         <Services />
         <Projects />
         <About />
