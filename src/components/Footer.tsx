@@ -51,7 +51,6 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <span>© {currentYear} {studioInfo.name}. All rights reserved.</span>
-          <span className="footer__disclaimer">{footer.disclaimer}</span>
         </div>
       </div>
     </footer>

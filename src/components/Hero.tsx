@@ -1,4 +1,4 @@
-import { hero, contactCTA } from '../data/studio';
+import { hero } from '../data/studio';
 
 export default function Hero() {
   return (
@@ -18,11 +18,11 @@ export default function Hero() {
           <h1 className="hero__headline">{hero.headline}</h1>
           <p className="hero__body">{hero.body}</p>
           <div className="hero__actions">
-            <a href={contactCTA.ctaLink} className="btn btn--accent btn--large">
-              {hero.cta}
+            <a href={hero.ctaLinkSecondary} className="btn btn--accent btn--large">
+              {hero.ctaSecondary}
             </a>
             <a href={hero.ctaLink} className="btn btn--outline btn--large">
-              {hero.ctaSecondary}
+              {hero.cta}
             </a>
           </div>
         </div>

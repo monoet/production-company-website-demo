@@ -11,11 +11,11 @@ export default function About() {
             <p className="about__copy">{about.copy}</p>
             <p className="about__location">{about.locationNote}</p>
 
-            <div className="about__stats">
-              {about.stats.map((stat) => (
-                <div key={stat.label} className="about__stat">
-                  <span className="about__stat-value">{stat.value}</span>
-                  <span className="about__stat-label">{stat.label}</span>
+            <div className="about__highlights">
+              {about.highlights.map((h) => (
+                <div key={h} className="about__highlight-item">
+                  <span className="about__highlight-bullet" aria-hidden="true">—</span>
+                  <span className="about__highlight-text">{h}</span>
                 </div>
               ))}
             </div>
@@ -24,7 +24,7 @@ export default function About() {
           <div className="about__image-wrap">
             <img
               src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80"
-              alt="Northline Pictures production team on set"
+              alt="MONTENEGRO PROD. production support on location in northern Mexico"
               loading="lazy"
               className="about__image"
             />

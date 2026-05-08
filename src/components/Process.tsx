@@ -2,11 +2,11 @@ import { process } from '../data/studio';
 
 export default function Process() {
   return (
-    <section className="process section" id="process" aria-label="Our process">
+    <section className="process section" id="experience" aria-label="Experience">
       <div className="container">
         <div className="section-header">
           <span className="section-label">How we work</span>
-          <h2 className="section-title">From idea to final cut.</h2>
+          <h2 className="section-title">From location to screen — field-tested process.</h2>
         </div>
 
         <div className="process__steps">
