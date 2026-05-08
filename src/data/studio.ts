@@ -239,28 +239,30 @@ export const footer = {
 // Replace with client work before launch.
 
 export const featuredVideos: VideoSource[] = [
+  // ── YouTube embeds (official Short of the Week channel) ──────────────
   {
-    title: 'Myrna the Monster',
-    category: 'Short Film / Comedy',
-    description: 'A heartbroken alien dreamer from the moon transitions into young adult life in Los Angeles like any other 20-something.',
-    credit: 'Directed by Ian Samuels. Demo placeholder via Short of the Week.',
-    embedUrl: '', // No embed found — using external card
-    externalUrl: 'https://www.shortoftheweek.com/2023/07/20/myrna-the-monster/',
+    title: 'The Most Perfect Perfect Person (featuring Poppy)',
+    category: 'Music Video / Short',
+    description: 'Poppy lets the most perfect version of herself emerge. Directed by Paul Trillo. Demo placeholder — Short of the Week.',
+    credit: 'Directed by Paul Trillo. © Short of the Week / Poppy. Demo placeholder.',
+    embedUrl: 'https://www.youtube.com/embed/WV6VwtS2HE4',
+    externalUrl: 'https://www.youtube.com/watch?v=WV6VwtS2HE4',
   },
   {
-    title: 'From the Future with Love',
-    category: 'Sci-Fi / Proof of Concept',
-    description: 'Squads of privatized police officers sell overpriced protection plans in a gritty New York dystopia. Strong world-building and production design.',
-    credit: 'Directed by K-Michel Parandi. Demo placeholder via Short of the Week.',
-    embedUrl: '', // No embed found — using external card
-    externalUrl: 'https://www.shortoftheweek.com/2013/09/06/from-the-future-with-love/',
+    title: 'Where the Black Sand Burns',
+    category: 'Short Film / Romance',
+    description: 'As a nearby volcano is about to erupt, tensions rise between young lovers Mateo and Alejandra. Award-winning romantic short from Short of the Week.',
+    credit: 'Demo placeholder via Short of the Week YouTube channel. Replace with client work.',
+    embedUrl: 'https://www.youtube.com/embed/zz-r-lxcD_A',
+    externalUrl: 'https://www.youtube.com/watch?v=zz-r-lxcD_A',
   },
+  // ── External-only (no embed available) ──────────────────────────────
   {
-    title: 'Beyond Failure',
-    category: 'Comedy / Character Short',
-    description: 'A contemporary indie comedy with a personal, internet-age voice. Featured on Short of the Week in 2025.',
-    credit: 'Demo placeholder via Short of the Week. Replace with client work.',
-    embedUrl: '',
-    externalUrl: 'https://www.shortoftheweek.com/2025/04/14/beyond-failure/',
+    title: 'A Black Hole Near Kent County',
+    category: 'Short Film / Sci-Fi',
+    description: 'Clermont-Ferrand short film via Short of the Week. Age-restricted — link out to YouTube to watch.',
+    credit: 'Directed by [filmmaker]. Demo placeholder via Short of the Week. Replace with client work.',
+    embedUrl: '', // Age-restricted — no iframe; shows external card instead
+    externalUrl: 'https://www.youtube.com/watch?v=wlBh9NxVeko',
   },
 ];
