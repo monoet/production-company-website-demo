@@ -33,7 +33,7 @@ export const navLinks = [
 ];
 
 export const studioInfo = {
-  name: 'MONTENEGRO PROD.',
+  name: 'MONTENEGRO PROD',
   tagline: 'Production support rooted in real locations.',
   city: 'Torreón, Mexico',
   email: 'hello@montenegroprod.com',
