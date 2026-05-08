@@ -2,6 +2,15 @@
    Northline Pictures — Studio Content Data
    ============================================ */
 
+export interface VideoSource {
+  title: string;
+  category: string;
+  description: string;
+  credit: string;
+  embedUrl: string;
+  externalUrl: string;
+}
+
 export const navLinks = [
   { label: 'Work', href: '#work' },
   { label: 'Services', href: '#services' },
@@ -221,3 +230,37 @@ export const footer = {
   },
   disclaimer: 'Demo website concept. Replace content, projects, and contact details before launch.',
 };
+
+// ============================================
+// Featured Videos (Demo Placeholders — Short of the Week)
+// ============================================
+// No video files are hosted in this repo.
+// All embeds link to official Short of the Week / YouTube / Vimeo pages.
+// Replace with client work before launch.
+
+export const featuredVideos: VideoSource[] = [
+  {
+    title: 'Myrna the Monster',
+    category: 'Short Film / Comedy',
+    description: 'A heartbroken alien dreamer from the moon transitions into young adult life in Los Angeles like any other 20-something.',
+    credit: 'Directed by Ian Samuels. Demo placeholder via Short of the Week.',
+    embedUrl: '', // No embed found — using external card
+    externalUrl: 'https://www.shortoftheweek.com/2023/07/20/myrna-the-monster/',
+  },
+  {
+    title: 'From the Future with Love',
+    category: 'Sci-Fi / Proof of Concept',
+    description: 'Squads of privatized police officers sell overpriced protection plans in a gritty New York dystopia. Strong world-building and production design.',
+    credit: 'Directed by K-Michel Parandi. Demo placeholder via Short of the Week.',
+    embedUrl: '', // No embed found — using external card
+    externalUrl: 'https://www.shortoftheweek.com/2013/09/06/from-the-future-with-love/',
+  },
+  {
+    title: 'Beyond Failure',
+    category: 'Comedy / Character Short',
+    description: 'A contemporary indie comedy with a personal, internet-age voice. Featured on Short of the Week in 2025.',
+    credit: 'Demo placeholder via Short of the Week. Replace with client work.',
+    embedUrl: '',
+    externalUrl: 'https://www.shortoftheweek.com/2025/04/14/beyond-failure/',
+  },
+];

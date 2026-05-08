@@ -1,32 +1,22 @@
-import { featuredReel } from '../data/studio';
+import { featuredVideos } from '../data/studio';
+import VideoEmbed from './VideoEmbed';
 
 export default function FeaturedReel() {
+  const featured = featuredVideos[0];
+
   return (
     <section className="featured-reel section--tight" aria-label="Featured reel">
       <div className="container">
         <div className="section-header">
-          <span className="section-label">{featuredReel.title}</span>
-          <p className="featured-reel__subtitle">{featuredReel.subtitle}</p>
+          <span className="section-label">Featured Reel</span>
+          <p className="featured-reel__subtitle">
+            {featuredVideos[0]?.description ?? 'Commercials, music videos, narrative work, and branded content.'}
+          </p>
         </div>
       </div>
 
-      <div className="featured-reel__stage">
-        <div className="featured-reel__frame">
-          <a href={featuredReel.playLink} className="featured-reel__poster-link" aria-label="Play featured reel">
-            <img
-              src={featuredReel.posterImage.url}
-              alt={featuredReel.posterImage.alt}
-              className="featured-reel__poster"
-              loading="lazy"
-            />
-            <div className="featured-reel__play-btn" aria-hidden="true">
-              <svg width="20" height="24" viewBox="0 0 20 24" fill="none">
-                <path d="M0 0L20 12L0 24V0Z" fill="currentColor" />
-              </svg>
-            </div>
-            <div className="featured-reel__grain" aria-hidden="true" />
-          </a>
-        </div>
+      <div className="featured-reel__embed-wrap">
+        <VideoEmbed video={featured} featured />
       </div>
     </section>
   );
