@@ -13,6 +13,8 @@ export interface CreditProject {
   embedUrl?: string;
   platform?: 'youtube' | 'vimeo' | 'none';
   notes?: string;
+  year?: string;
+  description?: string;
 }
 
 export interface VideoSource {
@@ -52,12 +54,6 @@ export const hero = {
   },
 };
 
-export const featuredReel = {
-  title: 'Selected Work',
-  subtitle: 'Location management, casting, art production, and production support across northern Mexico and beyond.',
-  playLink: '#work',
-};
-
 // ──────────────────────────────────────────────────────────────
 // CREDITS — real production work
 // ──────────────────────────────────────────────────────────────
@@ -76,6 +72,26 @@ export const credits: CreditProject[] = [
     credits: ['Location Manager'],
     videoUrl: 'https://www.youtube.com/watch?v=BOvizBjQ8_4',
     embedUrl: 'https://www.youtube.com/embed/BOvizBjQ8_4',
+    platform: 'youtube',
+  },
+  {
+    title: 'Dragonball Evolution',
+    category: 'Feature Film',
+    credits: ['Location Management', 'Second Unit Support — Dunas de Bilbao'],
+    year: '2008',
+    description: 'Feature film production support in Dunas de Bilbao, with location management and second unit support for desert location work.',
+    videoUrl: 'https://www.youtube.com/watch?v=T4_wHfz2qUA',
+    embedUrl: 'https://www.youtube.com/embed/T4_wHfz2qUA',
+    platform: 'youtube',
+  },
+  {
+    title: 'Sin Senos no hay Paraíso',
+    category: 'Television Series',
+    credits: ['Location Manager', 'Production Support — Dunas de Bilbao'],
+    year: '2008',
+    description: 'Television production support in Dunas de Bilbao, including location management and on-the-ground production coordination.',
+    videoUrl: 'https://www.youtube.com/watch?v=N6y7R5WcqcM',
+    embedUrl: 'https://www.youtube.com/embed/N6y7R5WcqcM',
     platform: 'youtube',
   },
   {
@@ -122,6 +138,16 @@ export const credits: CreditProject[] = [
     credits: ['Cinematographer', 'Location Manager', 'Casting'],
     videoUrl: 'https://www.youtube.com/watch?v=K4MVKUl8n4Y',
     embedUrl: 'https://www.youtube.com/embed/K4MVKUl8n4Y',
+    platform: 'youtube',
+  },
+  {
+    title: 'Texas Rising',
+    category: 'Television Miniseries',
+    credits: ['Actor Wrangler'],
+    year: '2015',
+    description: 'Production support for the historical television miniseries, with actor wrangling responsibilities.',
+    videoUrl: 'https://www.youtube.com/watch?v=UUO4oLcc7fo',
+    embedUrl: 'https://www.youtube.com/embed/UUO4oLcc7fo',
     platform: 'youtube',
   },
   {
