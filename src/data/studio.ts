@@ -74,8 +74,9 @@ export const credits: CreditProject[] = [
     title: 'Pérdida Total',
     category: 'Production',
     credits: ['Location Manager'],
-    platform: 'none',
-    notes: 'Video link pending.',
+    videoUrl: 'https://www.youtube.com/watch?v=BOvizBjQ8_4',
+    embedUrl: 'https://www.youtube.com/embed/BOvizBjQ8_4',
+    platform: 'youtube',
   },
   {
     title: 'Somos. — Netflix',
