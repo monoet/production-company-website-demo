@@ -192,11 +192,30 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    105deg,
-    rgba(11, 13, 16, 0.92) 0%,
-    rgba(11, 13, 16, 0.75) 50%,
-    rgba(11, 13, 16, 0.4) 100%
+    90deg,
+    rgba(8, 12, 18, 0.92) 0%,
+    rgba(8, 12, 18, 0.78) 28%,
+    rgba(8, 12, 18, 0.42) 52%,
+    rgba(8, 12, 18, 0.12) 72%,
+    rgba(8, 12, 18, 0.00) 100%
   );
+}
+
+@media (max-width: 767px) {
+  .hero__overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 12, 18, 0.88) 0%,
+      rgba(8, 12, 18, 0.68) 42%,
+      rgba(8, 12, 18, 0.28) 72%,
+      rgba(8, 12, 18, 0.08) 100%
+    );
+  }
+}
+
+.hero__headline,
+.hero__body {
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
 }
 
 .hero__inner {
