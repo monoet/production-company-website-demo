@@ -47,8 +47,8 @@ export const hero = {
   ctaLink: 'mailto:hello@montenegroprod.com?subject=Production%20Inquiry',
   ctaLinkSecondary: '#work',
   heroImage: {
-    url: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1600&q=80',
-    alt: 'Film production set with cinematic lighting',
+    url: 'https://pub-619ad6af8dfd4282a7d3446db223c040.r2.dev/actos%20de%20dios_upscayl_2x_high-fidelity-4x.png',
+    alt: 'Cinematic frame from Actos de Dios',
   },
 };
 
